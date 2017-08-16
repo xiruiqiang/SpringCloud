@@ -1,16 +1,14 @@
-package cc.xiruiqiang.spring.cloud.config.server;
+package cc.xiruiqiang.spring.cloud.config.client;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.config.server.EnableConfigServer;
 
 @EnableDiscoveryClient
-@EnableConfigServer
 @SpringBootApplication
-public class ConfigServerApplication {
+public class ConfigClientApplication {
 	public static void main(String[] args) {
-		new SpringApplicationBuilder(ConfigServerApplication.class).web(true).run(args);
+		new SpringApplicationBuilder(ConfigClientApplication.class).web(true).run(args);
 	}
 
 }
